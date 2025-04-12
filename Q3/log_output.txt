@@ -1,0 +1,814 @@
+rtinit0() is called at time t=: 0.000
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|  999     3   999
+     3|  999   999     7
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  3  7  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 0 sends packet to node 1 with: (0  1  3  7)
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  3  7  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 0 sends packet to node 2 with: (0  1  3  7)
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  3  7  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 0 sends packet to node 3 with: (0  1  3  7)
+rtinit1() is called at time t=: 0.000
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1   999
+dest 2|  999     1
+     3|  999   999
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  999  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 1 sends packet to node 0 with: (1  0  1  999)
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  999  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 1 sends packet to node 2 with: (1  0  1  999)
+rtinit2() is called at time t=: 0.000
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3   999   999
+dest 1|  999     1   999
+     3|  999   999     2
+    TOLAYER2: source: 2, dest: 0
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 2 sends packet to node 0 with: (3  1  0  2)
+    TOLAYER2: source: 2, dest: 1
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 2 sends packet to node 1 with: (3  1  0  2)
+    TOLAYER2: source: 2, dest: 3
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 2 sends packet to node 3 with: (3  1  0  2)
+rtinit3() is called at time t=: 0.000
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   999
+dest 1|  999   999
+     2|  999     2
+    TOLAYER2: source: 3, dest: 0
+              costs:7  999  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 3 sends packet to node 0 with: (7  999  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:7  999  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 3 sends packet to node 2 with: (7  999  2  0)
+    TOLAYER2: source: 3, dest: 0
+              costs:7  999  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 3 sends packet to node 0 with: (7  999  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:7  999  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.000, node 3 sends packet to node 2 with: (7  999  2  0)
+MAIN: rcv event, t=0.947, at 3 src: 0, dest: 3, contents:   0   1   3   7
+rtupdate3() is called at time t=: 0.947 as node 0 sent a pkt with (0  1  3  7)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   999
+dest 1|    8   999
+     2|   10     2
+    TOLAYER2: source: 3, dest: 0
+              costs:7  8  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.947, node 3 sends packet to node 0 with: (7  8  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:7  8  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.947, node 3 sends packet to node 2 with: (7  8  2  0)
+MAIN: rcv event, t=0.992, at 0 src: 1, dest: 0, contents:   1   0   1 999
+rtupdate0() is called at time t=: 0.992 as node 1 sent a pkt with (1  0  1  999)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|    2     3   999
+     3|  999   999     7
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  7  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.992, node 0 sends packet to node 1 with: (0  1  2  7)
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  7  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.992, node 0 sends packet to node 2 with: (0  1  2  7)
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  7  
+    TOLAYER2: scheduling arrival on other side
+At time t=0.992, node 0 sends packet to node 3 with: (0  1  2  7)
+MAIN: rcv event, t=1.209, at 3 src: 2, dest: 3, contents:   3   1   0   2
+rtupdate3() is called at time t=: 1.209 as node 2 sent a pkt with (3  1  0  2)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|    8     3
+     2|   10     2
+    TOLAYER2: source: 3, dest: 0
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=1.209, node 3 sends packet to node 0 with: (5  3  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=1.209, node 3 sends packet to node 2 with: (5  3  2  0)
+MAIN: rcv event, t=1.316, at 3 src: 0, dest: 3, contents:   0   1   2   7
+rtupdate3() is called at time t=: 1.316 as node 0 sent a pkt with (0  1  2  7)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|    8     3
+     2|    9     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=1.642, at 2 src: 0, dest: 2, contents:   0   1   3   7
+rtupdate2() is called at time t=: 1.642 as node 0 sent a pkt with (0  1  3  7)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3   999   999
+dest 1|    4     1   999
+     3|   10   999     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=1.871, at 1 src: 0, dest: 1, contents:   0   1   3   7
+rtupdate1() is called at time t=: 1.871 as node 0 sent a pkt with (0  1  3  7)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1   999
+dest 2|    4     1
+     3|    8   999
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  8  
+    TOLAYER2: scheduling arrival on other side
+At time t=1.871, node 1 sends packet to node 0 with: (1  0  1  8)
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  8  
+    TOLAYER2: scheduling arrival on other side
+At time t=1.871, node 1 sends packet to node 2 with: (1  0  1  8)
+MAIN: rcv event, t=2.166, at 2 src: 1, dest: 2, contents:   1   0   1 999
+rtupdate2() is called at time t=: 2.166 as node 1 sent a pkt with (1  0  1  999)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2   999
+dest 1|    4     1   999
+     3|   10   999     2
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.166, node 2 sends packet to node 0 with: (2  1  0  2)
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.166, node 2 sends packet to node 1 with: (2  1  0  2)
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.166, node 2 sends packet to node 3 with: (2  1  0  2)
+MAIN: rcv event, t=2.407, at 0 src: 2, dest: 0, contents:   3   1   0   2
+rtupdate0() is called at time t=: 2.407 as node 2 sent a pkt with (3  1  0  2)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3   999
+     3|  999     5     7
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.407, node 0 sends packet to node 1 with: (0  1  2  5)
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.407, node 0 sends packet to node 2 with: (0  1  2  5)
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.407, node 0 sends packet to node 3 with: (0  1  2  5)
+MAIN: rcv event, t=2.421, at 2 src: 3, dest: 2, contents:   7 999   2   0
+rtupdate2() is called at time t=: 2.421 as node 3 sent a pkt with (7  999  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1   999
+     3|   10   999     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=2.811, at 1 src: 2, dest: 1, contents:   3   1   0   2
+rtupdate1() is called at time t=: 2.811 as node 2 sent a pkt with (3  1  0  2)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     4
+dest 2|    4     1
+     3|    8     3
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.811, node 1 sends packet to node 0 with: (1  0  1  3)
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=2.811, node 1 sends packet to node 2 with: (1  0  1  3)
+MAIN: rcv event, t=2.877, at 1 src: 0, dest: 1, contents:   0   1   2   7
+rtupdate1() is called at time t=: 2.877 as node 0 sent a pkt with (0  1  2  7)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     4
+dest 2|    3     1
+     3|    8     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=3.283, at 3 src: 2, dest: 3, contents:   2   1   0   2
+rtupdate3() is called at time t=: 3.283 as node 2 sent a pkt with (2  1  0  2)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     4
+dest 1|    8     3
+     2|    9     2
+    TOLAYER2: source: 3, dest: 0
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=3.283, node 3 sends packet to node 0 with: (4  3  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=3.283, node 3 sends packet to node 2 with: (4  3  2  0)
+MAIN: rcv event, t=3.293, at 2 src: 3, dest: 2, contents:   7 999   2   0
+rtupdate2() is called at time t=: 3.293 as node 3 sent a pkt with (7  999  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1   999
+     3|   10   999     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=3.589, at 1 src: 2, dest: 1, contents:   2   1   0   2
+rtupdate1() is called at time t=: 3.589 as node 2 sent a pkt with (2  1  0  2)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     3
+dest 2|    3     1
+     3|    8     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=4.063, at 2 src: 3, dest: 2, contents:   7   8   2   0
+rtupdate2() is called at time t=: 4.063 as node 3 sent a pkt with (7  8  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1    10
+     3|   10   999     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=4.104, at 0 src: 3, dest: 0, contents:   7 999   2   0
+rtupdate0() is called at time t=: 4.104 as node 3 sent a pkt with (7  999  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3     9
+     3|  999     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=4.330, at 0 src: 3, dest: 0, contents:   7 999   2   0
+rtupdate0() is called at time t=: 4.330 as node 3 sent a pkt with (7  999  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3     9
+     3|  999     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=4.762, at 3 src: 0, dest: 3, contents:   0   1   2   5
+rtupdate3() is called at time t=: 4.762 as node 0 sent a pkt with (0  1  2  5)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     4
+dest 1|    8     3
+     2|    9     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=4.945, at 2 src: 0, dest: 2, contents:   0   1   2   7
+rtupdate2() is called at time t=: 4.945 as node 0 sent a pkt with (0  1  2  7)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1    10
+     3|   10   999     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=5.371, at 1 src: 0, dest: 1, contents:   0   1   2   5
+rtupdate1() is called at time t=: 5.371 as node 0 sent a pkt with (0  1  2  5)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     3
+dest 2|    3     1
+     3|    6     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=6.163, at 0 src: 3, dest: 0, contents:   7   8   2   0
+rtupdate0() is called at time t=: 6.163 as node 3 sent a pkt with (7  8  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    15
+dest 2|    2     3     9
+     3|  999     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=6.818, at 2 src: 3, dest: 2, contents:   5   3   2   0
+rtupdate2() is called at time t=: 6.818 as node 3 sent a pkt with (5  3  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|   10   999     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=7.021, at 0 src: 3, dest: 0, contents:   5   3   2   0
+rtupdate0() is called at time t=: 7.021 as node 3 sent a pkt with (5  3  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|  999     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=7.970, at 0 src: 1, dest: 0, contents:   1   0   1   8
+rtupdate0() is called at time t=: 7.970 as node 1 sent a pkt with (1  0  1  8)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    9     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=7.996, at 2 src: 1, dest: 2, contents:   1   0   1   8
+rtupdate2() is called at time t=: 7.996 as node 1 sent a pkt with (1  0  1  8)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|   10     9     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=8.380, at 2 src: 0, dest: 2, contents:   0   1   2   5
+rtupdate2() is called at time t=: 8.380 as node 0 sent a pkt with (0  1  2  5)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    8     9     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=8.684, at 2 src: 1, dest: 2, contents:   1   0   1   3
+rtupdate2() is called at time t=: 8.684 as node 1 sent a pkt with (1  0  1  3)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    8     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=9.407, at 0 src: 2, dest: 0, contents:   2   1   0   2
+rtupdate0() is called at time t=: 9.407 as node 2 sent a pkt with (2  1  0  2)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    9     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=9.701, at 2 src: 3, dest: 2, contents:   4   3   2   0
+rtupdate2() is called at time t=: 9.701 as node 3 sent a pkt with (4  3  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    8     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10.087, at 0 src: 1, dest: 0, contents:   1   0   1   3
+rtupdate0() is called at time t=: 10.087 as node 1 sent a pkt with (1  0  1  3)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+At time t=10.087, node 0 sends packet to node 1 with: (0  1  2  4)
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+At time t=10.087, node 0 sends packet to node 2 with: (0  1  2  4)
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+At time t=10.087, node 0 sends packet to node 3 with: (0  1  2  4)
+MAIN: rcv event, t=10.262, at 1 src: 0, dest: 1, contents:   0   1   2   4
+rtupdate1() is called at time t=: 10.262 as node 0 sent a pkt with (0  1  2  4)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     3
+dest 2|    3     1
+     3|    5     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10.266, at 2 src: 0, dest: 2, contents:   0   1   2   4
+rtupdate2() is called at time t=: 10.266 as node 0 sent a pkt with (0  1  2  4)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10.624, at 0 src: 3, dest: 0, contents:   4   3   2   0
+rtupdate0() is called at time t=: 10.624 as node 3 sent a pkt with (4  3  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=12.051, at 3 src: 0, dest: 3, contents:   0   1   2   4
+rtupdate3() is called at time t=: 12.051 as node 0 sent a pkt with (0  1  2  4)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     4
+dest 1|    8     3
+     2|    9     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10000.000, at -1                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|   21     3     9
+     3|   23     5     7
+    TOLAYER2: source: 0, dest: 1
+              costs:0  4  3  5  
+    TOLAYER2: scheduling arrival on other side
+At time t=10000.000, node 0 sends packet to node 1 with: (0  4  3  5)
+    TOLAYER2: source: 0, dest: 2
+              costs:0  4  3  5  
+    TOLAYER2: scheduling arrival on other side
+At time t=10000.000, node 0 sends packet to node 2 with: (0  4  3  5)
+    TOLAYER2: source: 0, dest: 3
+              costs:0  4  3  5  
+    TOLAYER2: scheduling arrival on other side
+At time t=10000.000, node 0 sends packet to node 3 with: (0  4  3  5)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|   20     3
+dest 2|   22     1
+     3|   24     3
+    TOLAYER2: source: 1, dest: 0
+              costs:3  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=10000.000, node 1 sends packet to node 0 with: (3  0  1  3)
+    TOLAYER2: source: 1, dest: 2
+              costs:3  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=10000.000, node 1 sends packet to node 2 with: (3  0  1  3)
+MAIN: rcv event, t=10000.106, at 0 src: 1, dest: 0, contents:   3   0   1   3
+rtupdate0() is called at time t=: 10000.106 as node 1 sent a pkt with (3  0  1  3)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|   21     3     9
+     3|   23     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10000.702, at 2 src: 0, dest: 2, contents:   0   4   3   5
+rtupdate2() is called at time t=: 10000.702 as node 0 sent a pkt with (0  4  3  5)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    7     1     5
+     3|    8     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10001.166, at 1 src: 0, dest: 1, contents:   0   4   3   5
+rtupdate1() is called at time t=: 10001.166 as node 0 sent a pkt with (0  4  3  5)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|   20     3
+dest 2|   23     1
+     3|   25     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10001.378, at 3 src: 0, dest: 3, contents:   0   4   3   5
+rtupdate3() is called at time t=: 10001.378 as node 0 sent a pkt with (0  4  3  5)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     4
+dest 1|   11     3
+     2|   10     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10001.667, at 2 src: 1, dest: 2, contents:   3   0   1   3
+rtupdate2() is called at time t=: 10001.667 as node 1 sent a pkt with (3  0  1  3)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     4     6
+dest 1|    7     1     5
+     3|    8     4     2
+    TOLAYER2: source: 2, dest: 0
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=10001.667, node 2 sends packet to node 0 with: (3  1  0  2)
+    TOLAYER2: source: 2, dest: 1
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=10001.667, node 2 sends packet to node 1 with: (3  1  0  2)
+    TOLAYER2: source: 2, dest: 3
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=10001.667, node 2 sends packet to node 3 with: (3  1  0  2)
+MAIN: rcv event, t=10002.029, at 1 src: 2, dest: 1, contents:   3   1   0   2
+rtupdate1() is called at time t=: 10002.029 as node 2 sent a pkt with (3  1  0  2)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|   20     4
+dest 2|   23     1
+     3|   25     3
+    TOLAYER2: source: 1, dest: 0
+              costs:4  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=10002.029, node 1 sends packet to node 0 with: (4  0  1  3)
+    TOLAYER2: source: 1, dest: 2
+              costs:4  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=10002.029, node 1 sends packet to node 2 with: (4  0  1  3)
+MAIN: rcv event, t=10002.224, at 2 src: 1, dest: 2, contents:   4   0   1   3
+rtupdate2() is called at time t=: 10002.224 as node 1 sent a pkt with (4  0  1  3)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     5     6
+dest 1|    7     1     5
+     3|    8     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10002.742, at 0 src: 2, dest: 0, contents:   3   1   0   2
+rtupdate0() is called at time t=: 10002.742 as node 2 sent a pkt with (3  1  0  2)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|   21     3     9
+     3|   23     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10002.858, at 3 src: 2, dest: 3, contents:   3   1   0   2
+rtupdate3() is called at time t=: 10002.858 as node 2 sent a pkt with (3  1  0  2)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|   11     3
+     2|   10     2
+    TOLAYER2: source: 3, dest: 0
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=10002.858, node 3 sends packet to node 0 with: (5  3  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=10002.858, node 3 sends packet to node 2 with: (5  3  2  0)
+MAIN: rcv event, t=10002.871, at 2 src: 3, dest: 2, contents:   5   3   2   0
+rtupdate2() is called at time t=: 10002.871 as node 3 sent a pkt with (5  3  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     5     7
+dest 1|    7     1     5
+     3|    8     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10004.688, at 0 src: 1, dest: 0, contents:   4   0   1   3
+rtupdate0() is called at time t=: 10004.688 as node 1 sent a pkt with (4  0  1  3)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|   21     3     9
+     3|   23     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=10006.650, at 0 src: 3, dest: 0, contents:   5   3   2   0
+rtupdate0() is called at time t=: 10006.650 as node 3 sent a pkt with (5  3  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|   21     3     9
+     3|   23     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20000.000, at 0                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+At time t=20000.000, node 0 sends packet to node 1 with: (0  1  2  4)
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+At time t=20000.000, node 0 sends packet to node 2 with: (0  1  2  4)
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+At time t=20000.000, node 0 sends packet to node 3 with: (0  1  2  4)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     4
+dest 2|    4     1
+     3|    6     3
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=20000.000, node 1 sends packet to node 0 with: (1  0  1  3)
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+At time t=20000.000, node 1 sends packet to node 2 with: (1  0  1  3)
+MAIN: rcv event, t=20000.068, at 2 src: 0, dest: 2, contents:   0   1   2   4
+rtupdate2() is called at time t=: 20000.068 as node 0 sent a pkt with (0  1  2  4)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     5     7
+dest 1|    4     1     5
+     3|    7     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20000.871, at 3 src: 0, dest: 3, contents:   0   1   2   4
+rtupdate3() is called at time t=: 20000.871 as node 0 sent a pkt with (0  1  2  4)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|    8     3
+     2|    9     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20000.949, at 0 src: 1, dest: 0, contents:   1   0   1   3
+rtupdate0() is called at time t=: 20000.949 as node 1 sent a pkt with (1  0  1  3)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20001.076, at 1 src: 0, dest: 1, contents:   0   1   2   4
+rtupdate1() is called at time t=: 20001.076 as node 0 sent a pkt with (0  1  2  4)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     4
+dest 2|    3     1
+     3|    5     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20001.086, at 2 src: 1, dest: 2, contents:   1   0   1   3
+rtupdate2() is called at time t=: 20001.086 as node 1 sent a pkt with (1  0  1  3)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=20001.086, node 2 sends packet to node 0 with: (2  1  0  2)
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=20001.086, node 2 sends packet to node 1 with: (2  1  0  2)
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+At time t=20001.086, node 2 sends packet to node 3 with: (2  1  0  2)
+MAIN: rcv event, t=20001.135, at 0 src: 2, dest: 0, contents:   2   1   0   2
+rtupdate0() is called at time t=: 20001.135 as node 2 sent a pkt with (2  1  0  2)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20001.473, at 1 src: 2, dest: 1, contents:   2   1   0   2
+rtupdate1() is called at time t=: 20001.473 as node 2 sent a pkt with (2  1  0  2)
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1     3
+dest 2|    3     1
+     3|    5     3
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20002.814, at 3 src: 2, dest: 3, contents:   2   1   0   2
+rtupdate3() is called at time t=: 20002.814 as node 2 sent a pkt with (2  1  0  2)
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     4
+dest 1|    8     3
+     2|    9     2
+    TOLAYER2: source: 3, dest: 0
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=20002.814, node 3 sends packet to node 0 with: (4  3  2  0)
+    TOLAYER2: source: 3, dest: 2
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+At time t=20002.814, node 3 sends packet to node 2 with: (4  3  2  0)
+MAIN: rcv event, t=20002.982, at 2 src: 3, dest: 2, contents:   4   3   2   0
+rtupdate2() is called at time t=: 20002.982 as node 3 sent a pkt with (4  3  2  0)
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+
+Minimum cost didn't change. No new packets are sent
+MAIN: rcv event, t=20003.980, at 0 src: 3, dest: 0, contents:   4   3   2   0
+rtupdate0() is called at time t=: 20003.980 as node 3 sent a pkt with (4  3  2  0)
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+
+Minimum cost didn't change. No new packets are sent
+
+Simulator terminated at t=20003.980469, no packets in medium
+Minimum cost from 0 to other nodes are: 0 1 2 4
+Minimum cost from 1 to other nodes are: 1 0 1 3
+Minimum cost from 2 to other nodes are: 2 1 0 2
+Minimum cost from 3 to other nodes are: 4 3 2 0
